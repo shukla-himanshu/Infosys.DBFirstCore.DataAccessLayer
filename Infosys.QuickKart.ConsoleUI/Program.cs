@@ -49,7 +49,7 @@ namespace Infosys.QuickKart.ConsoleUI
             }
             Console.WriteLine();
             //Below code filters are
-            string pattern = "BMW%";
+            string pattern = "B%";
             List<Product> lstProducts = repository.FilterProductsUsingLike(pattern);
             if (lstProducts.Count == 0)
             {
