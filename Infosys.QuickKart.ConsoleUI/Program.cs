@@ -48,7 +48,7 @@ namespace Infosys.QuickKart.ConsoleUI
                 Console.WriteLine("{0,-15}{1,-30}{2,-15}{3,-10}{4}", product.ProductId, product.ProductName, product.CategoryId, product.Price, product.QuantityAvailable);
             }
             Console.WriteLine();
-            //Below code filtersgg
+            //Below code filters are
             string pattern = "BMW%";
             List<Product> lstProducts = repository.FilterProductsUsingLike(pattern);
             if (lstProducts.Count == 0)
